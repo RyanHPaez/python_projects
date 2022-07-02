@@ -6,7 +6,8 @@ hello('whatever your name is.')
 # ---------------------------------------------
 def pack_set(pack1, pack2, pack3):
   print(pack1+pack2+pack3)
-pack_set ("a","b","c")
+pack_set ("\ta","\tb","\tc")
+pack_set ("\nalpha","\nbeta","\ncharlie")
 
 # ---------------------------------------------
 
