@@ -4,8 +4,8 @@ def hello(name):
 hello('whatever your name is.')
 
 # ---------------------------------------------
-def pack_set(pack1, pack2, pack3):
-  print(pack1+pack2+pack3)
+def pack_set(*args):
+  print(*args)
   
 pack_set ("\ta","\tb","\tc")
 pack_set ("\nalpha","\nbeta","\ncharlie")
