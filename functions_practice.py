@@ -4,19 +4,27 @@ def hello(name):
 hello('whatever your name is.')
 
 # ---------------------------------------------
-def pack_set(*args):
-  print(*args)
+def pack(pack1, pack2, pack3):
+  # print(pack1+pack2+pack3)
+  return [pack1, pack2, pack3]
   
-pack_set ("\ta","\tb","\tc")
-pack_set ("\nalpha","\nbeta","\ncharlie")
+pack ("\ta","\tb","\tc")
+pack ("\nalpha","\nbeta","\ncharlie")
 
 # ---------------------------------------------
 
-def eat_lunch(fruit, meal, drink):
-  print("I get hungry at 1pm, I usually have a pre-packed meal, which includes: \n\tSome "+fruit+".\n\tNext I eat "+meal+".\n\tThen if I'm thirsty I drink "+drink+".\n\tAfter that my lunchbox is empty!")
-
-eat_lunch("Strawberries", "yogurt", "water")
-eat_lunch("apples", "sandwich", "juice")
-
+def eat_lunch(my_list):
+  
+  # print (my_list)
+  if len(my_list) ==0:    
+     print("my lunch box is empty!")
+  for i in range(len(my_list)):
+    if i == 0:
+      print("first I eat " + my_list [i])
+    else:
+      print("Next, I eat " +my_list [i])
+eat_lunch(["Strawberries", "yogurt", "water"])
+# eat_lunch(["apples", "sandwich", "juice"])
+eat_lunch([])
 
 
