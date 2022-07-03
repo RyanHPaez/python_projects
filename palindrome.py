@@ -1,3 +1,5 @@
+#  program should take in a string and return True if the string is a palindrome and False if not
+#  A palindrome is a word that is the same when it is reversed, such as madam, radar, kayak, or tacocat.
 # Write code for algorithm 5 below
 def is_palindrome(str):
   if len(str) == 1 or len(str) == 0:

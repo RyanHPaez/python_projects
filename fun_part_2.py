@@ -10,31 +10,37 @@ arb_args ("\nalpha","\nbeta","\ncharlie")
 
 
 def integers(a, b):
-  def integers_1():
+  def inner_integers_1():
     return a + b
-  def integers_2():
+  def inner_integers_2():
     return a - b
 
-  return integers_1() + integers_2()
+  return inner_integers_1() + inner_integers_2()
   
 print(integers(1,5))
 print(integers(8,4))
+print(integers(2,2))
 
 
 #---------------------------------------------------------------------
 
 
-# def manyParams (** kwargs):
-#   print(kwargs)
-#   lstStr=[]
-#   lstNum=[]
-#   lstNonNum=[]
+def manyParams (** kwargs):
+  # print(kwargs)
+  lstStr=[]
+  lstNum=[]
+  lstNonNum=[]
 
-#   for arg in kwargs.values():
-#     print(arg)
-#     if (type(arg) ==str):
-#     elif (type(arg) ==str):
+  for arg in kwargs.values():
+    print(arg)
+    if (type(arg) ==str):
+      lstStr.append(arg)
+    elif (type(arg) ==int):
+      lstNum.append(arg+3)
+    else:
+      lstNonNum.append(arg)  
 
-#   return lstStr,lstNum,lstNonNum
 
-# manyParams (a="mz", b= False, c=45)
+  return lstStr,lstNum,lstNonNum
+
+manyParams (a="mz", b= False, c=45)

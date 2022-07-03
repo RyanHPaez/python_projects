@@ -1,3 +1,4 @@
+# count up
 def natural_numbers(x,i=1):
 	#base case
   if i > x:
@@ -6,5 +7,5 @@ def natural_numbers(x,i=1):
   else:
     print(i)
     natural_numbers(x,i+1)
-natural_numbers(3)
+natural_numbers(8)
 #output: 1 2 3
