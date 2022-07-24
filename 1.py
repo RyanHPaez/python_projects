@@ -1,3 +1,4 @@
+# pip3 install numpy
 import numpy as np
 
 a = np.array([1,2,3,4])
