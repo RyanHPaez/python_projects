@@ -11,3 +11,21 @@ print("is 'apple' a palindrome?")
 print(is_palindrome('apple'))
 print("is 'tacocat' a palindrome?")
 print(is_palindrome('tacocat'))
+# ------------------------------------------------------------
+
+
+def solution(inputString):
+    count=[0]*256
+    for i in inputString:
+        count[ord(i)]+=1
+    odd=0
+    for i in range(0,256):
+        if(count[i]&1):
+            #print(count[i],chr(i))
+            odd+=1
+           # print(odd)
+        if(odd>1):
+            return False
+    return True
+inputString = "aabb"
+print(solution(inputString))
